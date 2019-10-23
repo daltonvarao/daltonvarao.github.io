@@ -9,7 +9,6 @@
 }
 
 body {
-  /* background-color: #00001b; */
   background: url('../img/background.svg');
   background-size: cover;
   max-width: 100%;
@@ -17,6 +16,7 @@ body {
 
 #app, html, body {
   height: 100%;
+  max-height: 100%;
 }
 
 .avatar {
@@ -34,7 +34,7 @@ body {
 
 .lead {
   color:#ffffff5f;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 #app {
