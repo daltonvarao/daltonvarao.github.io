@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  font-family: Raleway;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  /* background-color: #00001b; */
+  background: url('../img/background.svg');
+  background-size: cover;
+  max-width: 100%;
+}
+
+#app, html, body {
+  height: 100%;
+}
+
+.avatar {
+  width: 192px;
+  height: 192px;
+  opacity: .7;
+  align-self: center;
+  border-radius: 96px;
+  margin-bottom: 1rem;
+}
+
+.avatar:hover {
+  opacity: .8;
+}
+
+.lead {
+  color:#ffffff5f;
+  font-weight: 200;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-row {
+  margin-bottom: 1rem;
+}
+
+.mutted {
+  opacity: 0.9;
+  margin-top: .25rem;
+}
+
+.icon {
+  margin: 0 .5rem;
+  color: #ffffff;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  transition: .5s all;
+}
+
+.group-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 60%;
+}
+
+.profile {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  text-align: center;
+  font-size: 42pt;
+  word-wrap: break-word;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {  
+  .group-icon {
+    width: 70%;
+  }
+
+  .profile-name {
+    align-self: center;
+    font-size: 36pt;
+    width: 70%;
+    text-align: center;
+  }
+
+  #description {
+    display: none;
+  }
+
+  .profile-details {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 90%;
+    margin-bottom: 0rem;
+  }
+  .detail-item {
+    margin-top: .5rem;
+  }
+}
